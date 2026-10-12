@@ -1,0 +1,11 @@
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.tex
+*.fdb_latexmk
+*.fls
+VAJE_00/
+VAJE_01/
+venv/
