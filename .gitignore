@@ -8,7 +8,7 @@
 *.tex
 *.fdb_latexmk
 *.fls
-
+*_live.ipynb
 #ignore folders
 VAJE_00/
 VAJE_01/
