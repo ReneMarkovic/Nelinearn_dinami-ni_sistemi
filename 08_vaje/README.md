@@ -25,7 +25,7 @@ $$
 kjer $\sigma$ predstavlja Prandtlovo število, $r$ Rayleighjevo število ter $b$ geometrijski parameter konvektivne celice. Sistem je disipativen, saj je divergenca faznega toka konstantna in negativna:
 
 $$
-\operatorname{div} \mathbf{f} = \frac{\partial \dot{x}}{\partial x} + \frac{\partial \dot{y}}{\partial y} + \frac{\partial \dot{z}}{\partial z} = -(\sigma + 1 + b) < 0.
+\mathrm{div} \mathbf{f} = \frac{\partial \dot{x}}{\partial x} + \frac{\partial \dot{y}}{\partial y} + \frac{\partial \dot{z}}{\partial z} = -(\sigma + 1 + b) < 0.
 $$
 
 Vsak začetni fazni volumen $V(0)$ se v času eksponentno krči ($V(t) = V(0) e^{-(\sigma+1+b)t}$), kar trajektorije prisili k akumulaciji na geometrijsko zapleteni fraktalni strukturi – **čudnem atraktorju**.
@@ -40,8 +40,8 @@ Vsak začetni fazni volumen $V(0)$ se v času eksponentno krči ($V(t) = V(0) e^
 
     - Dve simetrični konvektivni stanji (za $r > 1$): $C_{1,2}^{\ast} = (\pm\sqrt{b(r-1)}, \, \pm\sqrt{b(r-1)}, \, r-1)$.
 
-2.  Za standardne parametre $\sigma = 10$ in $b = 8/3$ izračunajte hitrost krčenja volumna $\operatorname{div} \mathbf{f}$:  
-    $\operatorname{div} \mathbf{f} =$ \_\_\_\_\_\_\_\_\_\_
+2.  Za standardne parametre $\sigma = 10$ in $b = 8/3$ izračunajte hitrost krčenja volumna $\mathrm{div} \mathbf{f}$:  
+    $\mathrm{div} \mathbf{f} =$ \_\_\_\_\_\_\_\_\_\_
 
 ---
 
@@ -81,7 +81,7 @@ Spremenite parameter $r$: simulirajte stabilno stanje pri $r=15$, subkritično n
 
 > **Razmislek 1: Krčenje volumna in raztezanje trajektorij**
 >
-> Kako je mogoče, da se fazni volumen disipativno krči ($\operatorname{div}\mathbf{f} < 0$), hkrati pa se sosednje trajektorije eksponentno oddaljujejo? Pojasnite geometrijski mehanizem raztezanja in prepogibanja (*stretching and folding*).
+> Kako je mogoče, da se fazni volumen disipativno krči ($\mathrm{div}\mathbf{f} < 0$), hkrati pa se sosednje trajektorije eksponentno oddaljujejo? Pojasnite geometrijski mehanizem raztezanja in prepogibanja (*stretching and folding*).
 
 > **Razmislek 2: Determinizem proti napovedljivosti**
 >
