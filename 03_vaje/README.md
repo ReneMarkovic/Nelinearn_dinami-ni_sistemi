@@ -30,7 +30,7 @@ $$
 \det(\mathbf{A} - \lambda \mathbf{I}) = \lambda^2 - \tau \lambda + \Delta = 0 \implies \lambda_{1,2} = \frac{\tau \pm \sqrt{\tau^2 - 4\Delta}}{2},
 $$
 
-pri čemer sta $\tau = \operatorname{Tr}(\mathbf{A}) = a + d$ (sled matrike) in $\Delta = \det(\mathbf{A}) = ad - bc$ (determinanta matrike).
+pri čemer sta $\tau = \mathrm{Tr}(\mathbf{A}) = a + d$ (sled matrike) in $\Delta = \det(\mathbf{A}) = ad - bc$ (determinanta matrike).
 
 ### 1.1 Klasifikacija stacionarnih stanj v ravnini $(\tau, \Delta)$
 
@@ -41,7 +41,7 @@ Vrsto ravnotežja in topologijo faznega portreta enolično določata predznaka $
 - **Gorišče (spirala):** $\Delta > 0$ in $\tau^2 - 4\Delta < 0$. Lastni vrednosti sta konjugirano kompleksni: $\lambda_{1,2} = \frac{\tau}{2} \pm i\omega$. Če je $\tau < 0$, imamo **stabilno gorišče** (spiralno krčenje); če je $\tau > 0$, je gorišče **nestabilno** (spiralno širjenje).
 - **Center (nevtralno stabilno):** $\Delta > 0$ in $\tau = 0$. Lastni vrednosti sta čisto imaginarni ($\lambda_{1,2} = \pm i\sqrt{\Delta}$). Fazne trajektorije tvorijo zaprte eliptične orbite.
 
-Sled matrike določa tudi divergenco faznega toka: $\operatorname{div}(\dot{\mathbf{x}}) = \frac{\partial \dot{x}}{\partial x} + \frac{\partial \dot{y}}{\partial y} = a + d = \tau$. Kadar je $\tau < 0$, se fazni volumen disipativno krči.
+Sled matrike določa tudi divergenco faznega toka: $\mathrm{div}(\dot{\mathbf{x}}) = \frac{\partial \dot{x}}{\partial x} + \frac{\partial \dot{y}}{\partial y} = a + d = \tau$. Kadar je $\tau < 0$, se fazni volumen disipativno krči.
 
 ---
 
@@ -55,7 +55,7 @@ $$
 
 1. Zapišite matriko sistema $\mathbf{A}$ ter izračunajte sled $\tau$ in determinanto $\Delta$:
 
-   $\mathbf{A} =$ __________  $\tau = \operatorname{Tr}(\mathbf{A}) =$ __________  $\Delta = \det(\mathbf{A}) =$ __________
+   $\mathbf{A} =$ __________  $\tau = \mathrm{Tr}(\mathbf{A}) =$ __________  $\Delta = \det(\mathbf{A}) =$ __________
 
 2. Poiščite lastni vrednosti $\lambda_1, \lambda_2$ in pripadajoča lastna vektorja $\mathbf{v}_1, \mathbf{v}_2$:
 
@@ -96,7 +96,7 @@ Spremenite parametre matrike $\mathbf{A} = \begin{bmatrix} a & b \\ c & d \end{b
 |---|:-:|:-:|:-:|---|
 | **Sedlo** | $\begin{bmatrix} 1 & 1 \\ 4 & -2 \end{bmatrix}$ | $-1$ | $-6$ | Nestabilno, eksponentni pobeg vzdolž $\mathbf{v}_1$. |
 | **Stabilni vozel** | | | | Dve realni negativni lastni vrednosti. |
-| **Stabilno gorišče** | | | | Kompleksni lastni vrednosti z $\operatorname{Re}(\lambda) < 0$. |
+| **Stabilno gorišče** | | | | Kompleksni lastni vrednosti z $\mathrm{Re}(\lambda) < 0$. |
 | **Center** | | | | Čisto imaginarni lastni vrednosti ($\tau = 0, \Delta > 0$). |
 
 *Preglednica 1: Pregled osnovnih konfiguracij faznih ravnin.*
@@ -111,7 +111,7 @@ Spremenite parametre matrike $\mathbf{A} = \begin{bmatrix} a & b \\ c & d \end{b
 
 > **Razmislek 2: Disipacija in krčenje volumna**
 >
-> Povežite sled matrike $\tau = a+d$ z divergenco faznega prostora $\operatorname{div}(\dot{\mathbf{x}})$. Zakaj je za ohranitvene (hamiltonske) mehanske sisteme vedno $\tau = 0$? Kaj to pomeni za vrsto stacionarne točke pri nedušenem linearnem oscilatorju?
+> Povežite sled matrike $\tau = a+d$ z divergenco faznega prostora $\mathrm{div}(\dot{\mathbf{x}})$. Zakaj je za ohranitvene (hamiltonske) mehanske sisteme vedno $\tau = 0$? Kaj to pomeni za vrsto stacionarne točke pri nedušenem linearnem oscilatorju?
 
 > **Razmislek 3: Robustnost centra v nelinearnih sistemih**
 >

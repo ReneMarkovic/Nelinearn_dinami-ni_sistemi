@@ -21,7 +21,7 @@ $$
 Nelinearni advekcijski člen $6u \frac{\partial u}{\partial x}$ pospešuje vrh vala in ga ostri, medtem ko linearni disperzijski člen $\frac{\partial^3 u}{\partial x^3}$ val razteza. Natančno dinamično ravnovesje omogoča nastanek **solitona** – lokaliziranega samotnega vala, ki potuje s stalno obliko in hitrostjo:
 
 $$
-u(x, t) = 2 \operatorname{sech}^2(x - 4t).
+u(x, t) = 2 \mathrm{sech}^2(x - 4t).
 $$
 
 Hitrost solitona je premo sorazmerna z njegovo amplitudo ($c = 2A$), kar pomeni, da večji solitoni potujejo hitreje od manjših. Solitoni se ob medsebojnih trkih obnašajo kot kvazidelci: po interakciji ohranijo svojo obliko in amplitudo, pri čemer utrpijo le fazni zamik.
@@ -32,7 +32,7 @@ Hitrost solitona je premo sorazmerna z njegovo amplitudo ($c = 2A$), kar pomeni,
 
 1.  Za linearno disperzivno enačbo $\frac{\partial u}{\partial t} + \frac{\partial^3 u}{\partial x^3} = 0$ poiščite disperzijsko relacijo $\omega(k)$ z vstavljanjem harmonskega nastavka $u(x,t) = A e^{i(kx - \omega t)}$ ter izračunajte fazno in grupno hitrost.
 
-2.  Pokažite z odvajanjem, da je funkcija $u(x,t) = 2 \operatorname{sech}^2(x - 4t)$ natančna analitična rešitev KdV enačbe.
+2.  Pokažite z odvajanjem, da je funkcija $u(x,t) = 2 \mathrm{sech}^2(x - 4t)$ natančna analitična rešitev KdV enačbe.
 
 ---
 
@@ -44,7 +44,7 @@ Hitrost solitona je premo sorazmerna z njegovo amplitudo ($c = 2A$), kar pomeni,
 
 ### Naloga 1: Dekompozicija učinkov – Disperzija proti nelinearnosti (35 min)
 
-Kot začetni pogoj vzemite profil $u(x, 0) = 2 \operatorname{sech}^2(x)$ na periodičnem območju $x \in [-20, 20]$.
+Kot začetni pogoj vzemite profil $u(x, 0) = 2 \mathrm{sech}^2(x)$ na periodičnem območju $x \in [-20, 20]$.
 
 1.  **Samo disperzija ($u_t + u_{xxx} = 0$):** Simulirajte razpad pulza in opazujte oscilatorni disperzijski rep na levi strani.
 
@@ -57,7 +57,7 @@ Kot začetni pogoj vzemite profil $u(x, 0) = 2 \operatorname{sech}^2(x)$ na peri
 Nastavite začetni pogoj z dvema ločenima solitonoma: večjim (hitrejšim) na levi in manjšim (počasnejšim) na desni:
 
 $$
-u(x, 0) = 2 \cdot 4 \operatorname{sech}^2\left(\sqrt{4}(x + 8)\right) + 2 \cdot 1 \operatorname{sech}^2\left(\sqrt{1}(x - 2)\right).
+u(x, 0) = 2 \cdot 4 \mathrm{sech}^2\left(\sqrt{4}(x + 8)\right) + 2 \cdot 1 \mathrm{sech}^2\left(\sqrt{1}(x - 2)\right).
 $$
 
 1.  Simulirajte časovni razvoj skozi trk.
