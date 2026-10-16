@@ -9,7 +9,7 @@ Repozitorij vsebuje gradiva za laboratorijske vaje pri predmetu *Nelinearni dina
 - `navodila/` – izvirni delovni list v PDF obliki,
 - `vaje_XX.ipynb` – Jupyter zvezek z začetno predlogo za reševanje.
 
-Vse računalniške naloge se rešujejo v programskem jeziku **Python** (3.10 ali novejši) s knjižnicami `numpy`, `scipy`, `sympy` in `matplotlib`. Vsaka vaja traja 2 šolski uri (90 min) in je sestavljena iz teoretičnega uvoda, pripravljalne (analitične) naloge, računalniških nalog in vprašanj za zagovor.
+Vse računalniške naloge se rešujejo v programskem jeziku **Python** (3.10 ali novejši) s knjižnicami `numpy`, `scipy`, `sympy` in `matplotlib`. Vsaka vaja traja 2 šolski uri (90 min) in je samostojno zaključena celota.
 
 ## Priprava okolja
 
