@@ -1,3 +1,5 @@
+
+#ignore file with extendions related to LaTeX
 *.aux
 *.log
 *.toc
@@ -6,6 +8,12 @@
 *.tex
 *.fdb_latexmk
 *.fls
+
+#ignore folders
 VAJE_00/
 VAJE_01/
 venv/
+
+#ignore files
+python_update_tex.py
+vaje_NDS.pdf
