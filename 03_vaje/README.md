@@ -12,10 +12,10 @@
 
 ## 1. Teoretične osnove in motivacija
 
-Pri proučevanju večdimenzionalnih dinamičnih sistemov nas primarno zanima obnašanje v okolici ravnotežnih (stacionarnih) točk $\mathbf{x}^*$, kjer velja $\dot{\mathbf{x}} = \mathbf{f}(\mathbf{x}^*) = \mathbf{0}$. Z razvojem v Taylorjevo vrsto do prvega reda dinamiko v bližini ravnotežja opišemo z lineariziranim sistemom
+Pri proučevanju večdimenzionalnih dinamičnih sistemov nas primarno zanima obnašanje v okolici ravnotežnih (stacionarnih) točk $\mathbf{x}^{\ast}$, kjer velja $\dot{\mathbf{x}} = \mathbf{f}(\mathbf{x}^{\ast}) = \mathbf{0}$. Z razvojem v Taylorjevo vrsto do prvega reda dinamiko v bližini ravnotežja opišemo z lineariziranim sistemom
 
 $$
-\dot{\mathbf{u}} = \mathbf{J}(\mathbf{x}^*)\,\mathbf{u}, \quad \text{kjer je } \mathbf{u} = \mathbf{x} - \mathbf{x}^*
+\dot{\mathbf{u}} = \mathbf{J}(\mathbf{x}^{\ast})\,\mathbf{u}, \quad \text{kjer je } \mathbf{u} = \mathbf{x} - \mathbf{x}^{\ast}
 $$
 
 in $\mathbf{J}$ Jacobijeva matrika delnih odvodov. Za splošni avtonomni 2D sistem z matriko $\mathbf{A}$

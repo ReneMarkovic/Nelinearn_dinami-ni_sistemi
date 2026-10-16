@@ -52,9 +52,9 @@ Palico dolžine $L = 0{,}2\ \text{m}$ razdelite na $N = 200$ prostorskih interva
 
 1.  Prostorski odvod diskretizirajte z metodo vmesnih točk:
 
-    $$
+    ```math
     \frac{dT_i}{dt} = \frac{k_{i+1/2}(T_{i+1} - T_i) - k_{i-1/2}(T_i - T_{i-1})}{\rho c \, \Delta x^2}, \quad k_{i+1/2} = k\left(\frac{T_i + T_{i+1}}{2}\right).
-    $$
+    ```
 
 2.  Uporabite parametre bakrene palice z $\alpha_0 = k_0/(\rho c) = 8{,}23 \times 10^{-5}\ \text{m}^2/\text{s}$, $\beta = 0{,}005\ \text{K}^{-1}$ ter robnima pogojema $T(0, t) = 200^\circ\text{C}$ in $T(L, t) = 20^\circ\text{C}$.
 

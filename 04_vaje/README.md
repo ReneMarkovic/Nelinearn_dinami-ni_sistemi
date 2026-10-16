@@ -30,8 +30,8 @@ $$
 
 Stacionarne točke sistema v faznem prostoru $(x, v)$, kjer je $v = \dot{x}$, določata pogoja $\dot{x} = v = 0$ in $\dot{v} = ax - bx^3 = 0$:
 
-1. $x_0^* = 0$: lokalni maksimum potenciala ($V(0) = 0$), ki ustreza **sedelni točki** v ravnini faznih stanj (nestabilno ravnotežje).
-2. $x_{1,2}^* = \pm\sqrt{a/b}$: dva simetrična lokalna minimuma potenciala z energijo $V_{\min} = -\frac{a^2}{4b}$, ki ustrezata **stabilnima stanjema**.
+1. $x_0^{\ast} = 0$: lokalni maksimum potenciala ($V(0) = 0$), ki ustreza **sedelni točki** v ravnini faznih stanj (nestabilno ravnotežje).
+2. $x_{1,2}^{\ast} = \pm\sqrt{a/b}$: dva simetrična lokalna minimuma potenciala z energijo $V_{\min} = -\frac{a^2}{4b}$, ki ustrezata **stabilnima stanjema**.
 
 Pri $d > 0$ sta točki $(\pm\sqrt{a/b}, 0)$ privlačni gorišči ali vozlišči, točka $(0,0)$ pa ostane sedlo.
 
@@ -57,15 +57,15 @@ Za sistem izberemo normirane parametre iz učbenika: $a = 1{,}0$, $b = 1{,}0$ te
 
    $\dot{x} =$ ____________________  $\dot{v} =$ ______________________________
 
-2. Določite numerične koordinate vseh treh stacionarnih točk $(x^*, v^*)$ v fazni ravnini:
+2. Določite numerične koordinate vseh treh stacionarnih točk $(x^{\ast}, v^{\ast})$ v fazni ravnini:
 
-   $T_0^* = (0, 0)$, $T_1^* = ($ ______ $, 0)$, $T_2^* = ($ ______ $, 0)$.
+   $T_0^{\ast} = (0, 0)$, $T_1^{\ast} = ($ ______ $, 0)$, $T_2^{\ast} = ($ ______ $, 0)$.
 
-3. Zapišite splošno Jacobijevo matriko sistema $\mathbf{J}(x, v)$ ter jo ovrednotite v točkah $T_0^*$ in $T_1^*$:
+3. Zapišite splošno Jacobijevo matriko sistema $\mathbf{J}(x, v)$ ter jo ovrednotite v točkah $T_0^{\ast}$ in $T_1^{\ast}$:
 
    $\mathbf{J}(0, 0) =$ __________  $\mathbf{J}(1, 0) =$ __________
 
-4. Za točko $T_1^* = (1, 0)$ izračunajte sled $\tau$, determinanto $\Delta$ in lastni vrednosti $\lambda_{1,2}$. Določite tip ravnotežja:
+4. Za točko $T_1^{\ast} = (1, 0)$ izračunajte sled $\tau$, determinanto $\Delta$ in lastni vrednosti $\lambda_{1,2}$. Določite tip ravnotežja:
 
    $\tau =$ ______, $\Delta =$ ______ $\implies$ Tip: ____________________
 
@@ -100,8 +100,8 @@ Vse naloge v tem razdelku rešite v programskem jeziku **Python**.
 
 Za mrežo začetnih pogojev $(x_0, v_0) \in [-2, 2] \times [-2, 2]$ z ločljivostjo vsaj $100 \times 100$ točk določite končno stanje po dovolj dolgem času integracije ($t_{\text{end}} \approx 30$).
 
-- Če se trajektorija ustali v levem minimumu ($x^* \approx -1$), točko obarvajte modro.
-- Če se trajektorija ustali v desnem minimumu ($x^* \approx +1$), točko obarvajte rdeče.
+- Če se trajektorija ustali v levem minimumu ($x^{\ast} \approx -1$), točko obarvajte modro.
+- Če se trajektorija ustali v desnem minimumu ($x^{\ast} \approx +1$), točko obarvajte rdeče.
 - Izrišite dobljeno karto in opazujte mejo med bazenoma, ki poteka skozi sedelno točko $(0,0)$.
 
 | Začetni pogoj $(x_0, v_0)$ | Končna lega $x(\infty)$ | Končna energija $E(\infty)$ | Bazen privlačnosti |

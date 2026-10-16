@@ -30,9 +30,9 @@ Privzemimo harmonsko rešitev prvega reda $x(t) \approx A \cos(\omega t - \phi)$
 
 2.  Za sistem brez dušenja ($\delta = 0$) zapišite nelinearno algebrajsko enačbo, ki povezuje amplitudo $A$, frekvenco $\omega$ ter amplitudo vzbujanja $F_0$:
 
-    $$
+    ```math
     \left( \omega_0^2 - \omega^2 + \frac{3}{4}\beta A^2 \right) A = \_\_\_\_\_
-    $$
+    ```
 
 ---
 

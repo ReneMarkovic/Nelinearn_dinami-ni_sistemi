@@ -12,10 +12,10 @@
 
 Bifurkacija predstavlja kvalitativno spremembo v topologiji toka oziroma obnašanju dinamičnega sistema ob zveznem spreminjanju nadzornega (bifurkacijskega) parametra $r$. Pri kritični vrednosti $r_c$ se lahko število stacionarnih stanj spremeni, obstoječa stanja lahko zamenjajo svojo stabilnost ali pa se rodijo povsem nove oblike dinamike.
 
-V enorazsežnih sistemih $\dot{x} = f(x, r)$ lokalno stabilnost stacionarnega stanja $x^*$ ($f(x^*, r) = 0$) določa prvi odvod:
+V enorazsežnih sistemih $\dot{x} = f(x, r)$ lokalno stabilnost stacionarnega stanja $x^{\ast}$ ($f(x^{\ast}, r) = 0$) določa prvi odvod:
 
 $$
-\lambda = \left.\frac{\partial f(x, r)}{\partial x}\right|_{x=x^*}.
+\lambda = \left.\frac{\partial f(x, r)}{\partial x}\right|_{x=x^{\ast}}.
 $$
 
 Če je $\lambda < 0$, je stanje **stabilno** (motnje eksponentno zamrejo); če je $\lambda > 0$, je stanje **nestabilno**. Pogoj za nastanek bifurkacije je izguba hiperboličnosti: $\lambda = 0$ pri $r = r_c$.
@@ -25,33 +25,33 @@ $$
 1.  **Sedelno-vozelna bifurkacija** (*Saddle-node bifurcation*):  
     Predstavlja mehanizem nastanka ali izginotja parov ravnotežij. Normalna forma je:
 
-    $$
+    ```math
     \dot{x} = r - x^2.
-    $$
+    ```
 
-    Za $r < 0$ sistem nima realnih stacionarnih stanj. Pri $r_c = 0$ se pojavi polstabilna točka $x^* = 0$, za $r > 0$ pa nastaneta dve ravnotežji: stabilno $x_1^* = +\sqrt{r}$ in nestabilno $x_2^* = -\sqrt{r}$.
+    Za $r < 0$ sistem nima realnih stacionarnih stanj. Pri $r_c = 0$ se pojavi polstabilna točka $x^{\ast} = 0$, za $r > 0$ pa nastaneta dve ravnotežji: stabilno $x_1^{\ast} = +\sqrt{r}$ in nestabilno $x_2^{\ast} = -\sqrt{r}$.
 
 2.  **Transkritična bifurkacija** (*Transcritical bifurcation*):  
     Značilna je za sisteme, kjer ravnotežna točka vedno obstaja za vse vrednosti parametra, pri prehodu skozi kritično točko pa pride do **izmenjave stabilnosti**. Normalna forma je:
 
-    $$
+    ```math
     \dot{x} = rx - x^2 = x(r - x).
-    $$
+    ```
 
-    Stacionarni stanji sta $x_1^* = 0$ in $x_2^* = r$. Pri $r < 0$ je $x_1^* = 0$ stabilno in $x_2^* = r$ nestabilno; pri $r > 0$ se stabilnost zamenja ($x_1^* = 0$ postane nestabilno, $x_2^* = r$ stabilno).
+    Stacionarni stanji sta $x_1^{\ast} = 0$ in $x_2^{\ast} = r$. Pri $r < 0$ je $x_1^{\ast} = 0$ stabilno in $x_2^{\ast} = r$ nestabilno; pri $r > 0$ se stabilnost zamenja ($x_1^{\ast} = 0$ postane nestabilno, $x_2^{\ast} = r$ stabilno).
 
 3.  **Vilična bifurkacija** (*Pitchfork bifurcation*):  
     Pojavlja se v fizikalnih sistemih z zrcalno simetrijo ($f(-x) = -f(x)$).
 
     - **Nadkritična vilična bifurkacija:**
 
-      $$
+      ```math
       \dot{x} = rx - x^3 = x(r - x^2).
-      $$
+      ```
 
-      Za $r \le 0$ obstaja le stabilno stanje $x^* = 0$. Za $r > 0$ postane $x^* = 0$ nestabilno, na obeh straneh simetrično pa nastaneta dve novi stabilni veji $x_{1,2}^* = \pm\sqrt{r}$.
+      Za $r \le 0$ obstaja le stabilno stanje $x^{\ast} = 0$. Za $r > 0$ postane $x^{\ast} = 0$ nestabilno, na obeh straneh simetrično pa nastaneta dve novi stabilni veji $x_{1,2}^{\ast} = \pm\sqrt{r}$.
 
-    - **Podkritična vilična bifurkacija:** $\dot{x} = rx + x^3$, kjer stabilno izhodišče pri $r < 0$ obdajata dve nestabilni veji $x^* = \pm\sqrt{-r}$.
+    - **Podkritična vilična bifurkacija:** $\dot{x} = rx + x^3$, kjer stabilno izhodišče pri $r < 0$ obdajata dve nestabilni veji $x^{\ast} = \pm\sqrt{-r}$.
 
 ---
 
@@ -61,17 +61,17 @@ Obravnavamo normalno formo transkritične bifurkacije: $\dot{x} = rx - x^2$.
 
 1.  Izračunajte splošni odvod funkcije: $\frac{\partial f(x, r)}{\partial x} =$ \_\_\_\_\_\_\_\_\_\_
 
-2.  Ovrednotite odvod za obe ravnotežji ($x_1^* = 0$ in $x_2^* = r$):
+2.  Ovrednotite odvod za obe ravnotežji ($x_1^{\ast} = 0$ in $x_2^{\ast} = r$):
 
-    - Za $x_1^* = 0$: $\lambda_1(r) = \left.\frac{\partial f}{\partial x}\right|_{x=0} =$ \_\_\_\_\_\_\_\_\_\_
+    - Za $x_1^{\ast} = 0$: $\lambda_1(r) = \left.\frac{\partial f}{\partial x}\right|_{x=0} =$ \_\_\_\_\_\_\_\_\_\_
 
-    - Za $x_2^* = r$: $\lambda_2(r) = \left.\frac{\partial f}{\partial x}\right|_{x=r} =$ \_\_\_\_\_\_\_\_\_\_
+    - Za $x_2^{\ast} = r$: $\lambda_2(r) = \left.\frac{\partial f}{\partial x}\right|_{x=r} =$ \_\_\_\_\_\_\_\_\_\_
 
 3.  Določite predznake $\lambda_{1,2}$ in potrdite izmenjavo stabilnosti:
 
-    - Za $r = -1$: $x_1^* = 0$ je \_\_\_\_\_, $x_2^* = -1$ je \_\_\_\_\_.
+    - Za $r = -1$: $x_1^{\ast} = 0$ je \_\_\_\_\_, $x_2^{\ast} = -1$ je \_\_\_\_\_.
 
-    - Za $r = +1$: $x_1^* = 0$ je \_\_\_\_\_, $x_2^* = +1$ je \_\_\_\_\_.
+    - Za $r = +1$: $x_1^{\ast} = 0$ je \_\_\_\_\_, $x_2^{\ast} = +1$ je \_\_\_\_\_.
 
 ---
 
@@ -99,7 +99,7 @@ Za transkritično bifurkacijo $\dot{x} = rx - x^2$:
 
 ### Naloga 2: Konstrukcija bifurkacijskih diagramov (35 min)
 
-Napišite kodo, ki vzdolž parametra $r \in [-2, 2]$ poišče stacionarna stanja in jih izriše na diagramu $(r, x^*)$:
+Napišite kodo, ki vzdolž parametra $r \in [-2, 2]$ poišče stacionarna stanja in jih izriše na diagramu $(r, x^{\ast})$:
 
 - \*\*Primer A:\*\* Sedelno-vozelna bifurkacija $\dot{x} = r - x^2$.
 
@@ -107,11 +107,11 @@ Napišite kodo, ki vzdolž parametra $r \in [-2, 2]$ poišče stacionarna stanja
 
 Stabilne veje izrišite s \*\*polno črto\*\*, nestabilne veje pa s \*\*črtkano črto\*\*. Označite bifurkacijsko točko $(r_c, x_c)$.
 
-| **Tip bifurkacije** | **Enačba sistema** | **Stacionarna stanja $x^*(r)$** | **Stabilnostne veje** |
+| **Tip bifurkacije** | **Enačba sistema** | **Stacionarna stanja $x^{\ast}(r)$** | **Stabilnostne veje** |
 |:---|:--:|:---|:---|
-| **Sedelno-vozelna** | $\dot{x} = r - x^2$ | $x^* = \pm\sqrt{r}$ ($r \ge 0$) | $+\sqrt{r}$ stabilna, $-\sqrt{r}$ nestabilna. |
-| **Transkritična** | $\dot{x} = rx - x^2$ | $x_1^* = 0$, $x_2^* = r$ | Zamenjava pri $r_c = 0$. |
-| **Nadkritična vilična** | $\dot{x} = rx - x^3$ | $x_0^* = 0$, $x_{1,2}^* = \pm\sqrt{r}$ ($r \ge 0$) | $0$ izgubi stabilnost, krakoma stabilna. |
+| **Sedelno-vozelna** | $\dot{x} = r - x^2$ | $x^{\ast} = \pm\sqrt{r}$ ($r \ge 0$) | $+\sqrt{r}$ stabilna, $-\sqrt{r}$ nestabilna. |
+| **Transkritična** | $\dot{x} = rx - x^2$ | $x_1^{\ast} = 0$, $x_2^{\ast} = r$ | Zamenjava pri $r_c = 0$. |
+| **Nadkritična vilična** | $\dot{x} = rx - x^3$ | $x_0^{\ast} = 0$, $x_{1,2}^{\ast} = \pm\sqrt{r}$ ($r \ge 0$) | $0$ izgubi stabilnost, krakoma stabilna. |
 
 *Pregled normalnih form enorazsežnih bifurkacij.*
 

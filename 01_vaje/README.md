@@ -20,29 +20,29 @@ $$
 f(x) = 0.
 $$
 
-Naloga numeričnih postopkov je določitev ničle $x^*$, pri kateri je $f(x^*) = 0$. V okviru te vaje primerjamo tri standardne iterativne metode:
+Naloga numeričnih postopkov je določitev ničle $x^{\ast}$, pri kateri je $f(x^{\ast}) = 0$. V okviru te vaje primerjamo tri standardne iterativne metode:
 
 1.  **Metoda bisekcije (intervalna metoda):** Temelji na izreku o zveznosti funkcije. Če je funkcija zvezna na intervalu $[a, b]$ in velja pogoj menjave predznaka:
 
-    $$
+    ```math
     f(a) \cdot f(b) < 0,
-    $$
+    ```
 
     potem vmes obstaja vsaj ena realna ničla. Interval v vsakem koraku razpolovimo s točko $c = \frac{a+b}{2}$ ter zožimo iskalno območje glede na predznak produkta $f(a) \cdot f(c)$. Metoda je robustna in brezpogojno konvergentna, vendar linearno počasna.
 
 2.  **Newton–Raphsonova metoda (tangentna metoda):** Izhaja iz linearizacije funkcije s prvim členom Taylorjevega razvoja v okolici trenutnega približka $x_k$:
 
-    $$
+    ```math
     f(x) \approx f(x_k) + f'(x_k)(x - x_k) = 0 \implies x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}.
-    $$
+    ```
 
     Metoda v bližini enostavne ničle izkazuje kvadratno hitrost konvergence, vendar zahteva poznavanje prvega odvoda $f'(x)$ ter ustrezen začetni približek $x_0$, pri čemer $f'(x_k) \neq 0$.
 
 3.  **Sekantna metoda:** Odvod $f'(x_k)$ nadomesti s končno diferenco skozi zadnja dva iteracijska približka:
 
-    $$
+    ```math
     x_{k+1} = x_k - f(x_k) \frac{x_k - x_{k-1}}{f(x_k) - f(x_{k-1})}.
-    $$
+    ```
 
     Metoda ne zahteva računanja analitičnega odvoda, njena stopnja konvergence pa znaša približno $\approx 1{,}618$.
 
@@ -84,13 +84,13 @@ V programskem jeziku **Python** brez uporabe specializiranih knjižnic za optimi
 
 - `sekantna(f, x0, x1, tol, max_iter)`
 
-Vsaka funkcija naj spremlja absolutno vrednost odstopanja $|f(x_k)|$ skozi iteracije ter vrne izračunano ničlo $x^*$, število korakov in seznam napak.
+Vsaka funkcija naj spremlja absolutno vrednost odstopanja $|f(x_k)|$ skozi iteracije ter vrne izračunano ničlo $x^{\ast}$, število korakov in seznam napak.
 
 ### Naloga 2: Primerjava natančnosti in hitrosti konvergence (25 min)
 
 Poiščite ničlo funkcije $f(x)$ za dve zahtevani toleranci: $\text{tol} = 10^{-6}$ in $\text{tol} = 10^{-12}$. Uporabite začetne pogoje: $a = 2{,}0$, $b = 2{,}5$; $x_0 = 2{,}0$; $x_1 = 2{,}5$. Rezultate vpišite v spodnjo preglednico.
 
-| **Metoda** | **Ničla $x^*$ ($\text{tol}=10^{-6}$)** | **Št. korakov** | **Ničla $x^*$ ($\text{tol}=10^{-12}$)** | **Št. korakov** |
+| **Metoda** | **Ničla $x^{\ast}$ ($\text{tol}=10^{-6}$)** | **Št. korakov** | **Ničla $x^{\ast}$ ($\text{tol}=10^{-12}$)** | **Št. korakov** |
 |:---|:---|:--:|:---|:--:|
 | **Bisekcija** |  |  |  |  |
 | **Newton–Raphson** |  |  |  |  |

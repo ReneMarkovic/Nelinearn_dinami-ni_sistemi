@@ -36,9 +36,9 @@ Vsak začetni fazni volumen $V(0)$ se v času eksponentno krči ($V(t) = V(0) e^
 
 1.  Poiščite vse tri stacionarne točke Lorenzovega sistema:
 
-    - Izhodišče: $C_0^* = (0, 0, 0)$.
+    - Izhodišče: $C_0^{\ast} = (0, 0, 0)$.
 
-    - Dve simetrični konvektivni stanji (za $r > 1$): $C_{1,2}^* = (\pm\sqrt{b(r-1)}, \, \pm\sqrt{b(r-1)}, \, r-1)$.
+    - Dve simetrični konvektivni stanji (za $r > 1$): $C_{1,2}^{\ast} = (\pm\sqrt{b(r-1)}, \, \pm\sqrt{b(r-1)}, \, r-1)$.
 
 2.  Za standardne parametre $\sigma = 10$ in $b = 8/3$ izračunajte hitrost krčenja volumna $\operatorname{div} \mathbf{f}$:  
     $\operatorname{div} \mathbf{f} =$ \_\_\_\_\_\_\_\_\_\_
